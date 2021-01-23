@@ -3,9 +3,7 @@ LABEL maintainer="Azure App Services Container Images <appsvc-images@microsoft.c
 
 # Install Java
 
-RUN \
-    apt -y install default-jre \
-    apt -y install default-jdk
+RUN apk add default-jre
 
 # Create app directory
 WORKDIR /app
