@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-webapp-express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node -r esm app",
+    "dev": "nodemon -r esm app"
+  },
+  "description": "nodejs-webapp-express",
+  "author": {
+    "name": "Peter Akaliro"
+  },
+  "dependencies": {
+    "applicationinsights": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "esm": "^3.2.25",
+    "express": "*",
+    "morgan": "*",
+    "natives": "*",
+    "serve-favicon": "*"
+  }
+}
