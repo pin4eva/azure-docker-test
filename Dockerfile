@@ -3,7 +3,9 @@ LABEL maintainer="Azure App Services Container Images <appsvc-images@microsoft.c
 
 # Install Java
 
-RUN apk add default-jre
+RUN \
+    apk add zulu8-jre-headless \
+    apk add zulu8-jdk
 
 # Create app directory
 WORKDIR /app
