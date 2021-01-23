@@ -1,6 +1,12 @@
 FROM node:14-alpine
 LABEL maintainer="Azure App Services Container Images <appsvc-images@microsoft.com>"
 
+# Install Java
+
+RUN \
+    apt install default-jre \
+    apt install default-jdk
+
 # Create app directory
 WORKDIR /app
 
